@@ -1,18 +1,24 @@
-const white = "#fff";
-const black = "#000";
-const dark = "#626262";
-const blue = "#1F41BB";
-const gray = "#ECECEC";
-const lightBlue = "#f1f4ff";
+const white = "#FFFFFF";
+const gray = "#504f4f";
+const light = "#EBEAEF";
+const black = "#000000";
+const primary = "#15803D";
+
+// Define colors for dark mode
+const darkBackground = "#121212"; // Dark background color
+const darkText = "#FFFFFF"; // Text color for dark mode
 
 export default {
-  darkText: dark,
+  primary: primary,
+  background: light,
+  accent: black,
+  onAccent: white,
   text: black,
-  background: white,
-  primary: blue,
-  onPrimary: white,
-  active: blue,
-  borderWithOpacity: "#1f41bb",
-  lightPrimary: lightBlue,
-  gray: gray,
+  textGray: gray,
+  white: white,
+  light:light,
+  
+  // Add colors for dark mode
+  darkBackground: darkBackground,
+  darkText: darkText,
 };

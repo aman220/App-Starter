@@ -13,6 +13,14 @@ import RegisterScreen from "../screens/RegisterScreen";
 import Welcome from "../screens/WelcomeScreen";
 
 import { RootStackParamList } from "../types";
+import HomeScreen from "../screens/HomeScreen";
+import TicketScreen from "../screens/TicketsScreen";
+import AccountScreen from "../screens/AccountScreen";
+import ExploreScreen from "../screens/ExploreScreen";
+import BottomNav from "../screens/BottamNav/BottamNav";
+import EventDetails from "../screens/ExpandEvent/EventDetails";
+import WelcomeScreen from "../screens/WelcomeScreen";
+import PaymentScreen from "../screens/PaymentScreen";
 
 const theme = {
   ...DefaultTheme,
@@ -43,9 +51,17 @@ function RootNavigator() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="Welcome" component={Welcome} />
+      
+      <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Register" component={RegisterScreen} />
+      <Stack.Screen name="BottamTab" component={BottomNav} />
+      <Stack.Screen name="HomeScreen" component={HomeScreen} />
+      <Stack.Screen name="TicketScreen" component={TicketScreen} />
+      <Stack.Screen name="AccountScreen" component={AccountScreen} />
+      <Stack.Screen name="ExploreScreen" component={ExploreScreen} />
+      <Stack.Screen name="EventDetails" component={EventDetails} />
+      <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
     </Stack.Navigator>
   );
 }

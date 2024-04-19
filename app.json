@@ -1,32 +1,41 @@
 {
   "expo": {
-    "name": "On Boarding RN",
-    "slug": "OnBoarding-React-Native-App",
+    "name": "GLAU ticket",
+    "slug": "glau-ticket",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/Splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/Splash.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.aman856.GLAUticket"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0c347363-191f-44ce-a2e9-11718852ca60"
+      }
+    },
+    "owner": "aman856"
   }
 }
