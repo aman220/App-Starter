@@ -31,21 +31,21 @@ const productsData: Product[] = [
         id: 1,
         name: 'DJ Night & Concert',
         price: '700 Rs/-',
-        image: { uri: 'https://kaspiunique.com/Temp/djh.webp' },
+        image: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/djh.png?alt=media&token=ed9520bb-b06b-4024-93bd-1c8d2fc1ecd0' },
         Category: "Best Saler"
     },
     {
         id: 2,
         name: 'SPANDAN - GLAU ANNUAL FEST',
         price: '900 Rs/-',
-        image:{ uri: 'https://kaspiunique.com/Temp/spandhansds.png' },
+        image:{ uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/spandhansds.png?alt=media&token=47f392b2-eea4-480a-9ed5-96d85d359a62' },
         Category: "Recommended"
     },
     {
         id: 3,
         name: 'New Labrador Retirver Vaccinated',
         price: '$19.99',
-        image: { uri: 'https://kaspiunique.com/Temp/34grewg.webp' },
+        image: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/34grewg.webp?alt=media&token=c9af02b5-e2a8-4d42-9066-88d766a3ae8e' },
         Category: "Fast Out"
     },
     {
@@ -130,10 +130,10 @@ const UpcommingEvents: React.FC = () => {
     const AvatarGroup = () => {
         //set views data
         const avatars = [
-          {uri:"https://kaspiunique.com/Temp/male.png"},
-          {uri:"https://kaspiunique.com/Temp/female.png"},
-          {uri:"https://kaspiunique.com/Temp/male.png"},
-          {uri:"https://kaspiunique.com/Temp/female.png"},
+          {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6"},
+          {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/female.png?alt=media&token=a48a4f73-05fe-4a78-b619-756b57ea06e6"},
+          {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6"},
+          {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/female.png?alt=media&token=a48a4f73-05fe-4a78-b619-756b57ea06e6"},
         ];
       
         return (

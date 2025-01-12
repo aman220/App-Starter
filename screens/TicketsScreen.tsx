@@ -18,6 +18,7 @@ import Colors from "../constants/Colors";
 import Font from "../constants/Font";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import EventTicket from "./Screens/EventTicket";
 
 
 interface Product {
@@ -33,21 +34,21 @@ const productsData: Product[] = [
         id: 1,
         name: 'DJ Night & Concert',
         price: '700 Rs/-',
-        image: { uri: 'https://kaspiunique.com/Temp/djh.webp' },
+        image: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/djh.png?alt=media&token=ed9520bb-b06b-4024-93bd-1c8d2fc1ecd0' },
         Status: "Pay Now"
     },
     {
         id: 2,
         name: 'SPANDAN - GLAU ANNUAL FEST',
         price: '900 Rs/-',
-        image: { uri: 'https://kaspiunique.com/Temp/spandhansds.png' },
+        image: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/spandhansds.png?alt=media&token=47f392b2-eea4-480a-9ed5-96d85d359a62' },
         Status: "Pending"
     },
     {
         id: 3,
         name: 'SPANDAN - GLAU ANNUAL FEST',
         price: '900 Rs/-',
-        image: { uri: 'https://kaspiunique.com/Temp/spandhansds.png' },
+        image: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/spandhansds.png?alt=media&token=47f392b2-eea4-480a-9ed5-96d85d359a62' },
         Status: "Collected"
     },
 ];
@@ -55,7 +56,7 @@ const productsData: Product[] = [
 
 const TicketScreen: React.FC = () => {
     const colorScheme = useColorScheme();
-    const navigation  = useNavigation();
+    const navigation = useNavigation();
     const [selectedTab, setSelectedTab] = useState("Pending");
     const styles = StyleSheet.create({
         container: {
@@ -76,7 +77,7 @@ const TicketScreen: React.FC = () => {
             width: "100%",
             display: "flex",
             flexDirection: 'column',
-            marginVertical:5,
+            marginVertical: 5,
             borderRadius: 10,
             backgroundColor: Colors.white,
             padding: 5,
@@ -90,7 +91,7 @@ const TicketScreen: React.FC = () => {
             width: "100%",
             height: 200,
             borderRadius: 10,
-            objectFit:"cover"
+            objectFit: "cover"
         },
         productName: {
             fontSize: FontSize.base,
@@ -131,8 +132,8 @@ const TicketScreen: React.FC = () => {
                         <Text style={styles.productPrice}>{item.price}</Text>
                         <Text style={{ fontFamily: Font["poppins-regular"], color: Colors.textGray }}>person</Text>
                     </View>
-                    <TouchableOpacity style={{backgroundColor: item.Status === 'Pending' ? Colors.textGray : Colors.primary , padding:5 , borderRadius:Spacing.borderRadius.xl , alignItems:"center"}}>
-                        <Text style={{fontFamily:Font["poppins-semiBold"] , color:Colors.white , paddingHorizontal:10 , paddingVertical:2 , fontSize:FontSize.lg}}>{item.Status}</Text>
+                    <TouchableOpacity style={{ backgroundColor: item.Status === 'Pending' ? Colors.textGray : Colors.primary, padding: 5, borderRadius: Spacing.borderRadius.xl, alignItems: "center" }}>
+                        <Text style={{ fontFamily: Font["poppins-semiBold"], color: Colors.white, paddingHorizontal: 10, paddingVertical: 2, fontSize: FontSize.lg }}>{item.Status}</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -146,7 +147,7 @@ const TicketScreen: React.FC = () => {
                     justifyContent: "space-between",
                     alignItems: "center",
                 }}>
-                    <TouchableOpacity  style={{ backgroundColor: colorScheme === 'dark' ? Colors.textGray : Colors.light, width: 50, height: 50, borderRadius: Spacing.borderRadius.xl, justifyContent: "center", alignItems: "center" }} onPress={() => navigation.goBack()}> 
+                    <TouchableOpacity style={{ backgroundColor: colorScheme === 'dark' ? Colors.textGray : Colors.light, width: 50, height: 50, borderRadius: Spacing.borderRadius.xl, justifyContent: "center", alignItems: "center" }} onPress={() => navigation.goBack()}>
                         <Ionicons name='chevron-back' size={24} color={colorScheme === 'dark' ? Colors.white : Colors.textGray} />
                     </TouchableOpacity>
                     <Text style={{ fontSize: FontSize.lg, fontFamily: Font["poppins-semiBold"], color: colorScheme === 'dark' ? Colors.white : Colors.text }}>My Tickets</Text>
@@ -158,8 +159,8 @@ const TicketScreen: React.FC = () => {
                     <TouchableOpacity onPress={() => handleTabPress("Pending")}>
                         <Text style={[styles.tabText, { color: selectedTab === "Pending" ? Colors.primary : Colors.textGray, fontFamily: selectedTab === 'Pending' ? Font["poppins-semiBold"] : Font["poppins-regular"], }]}>Pending</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => handleTabPress("Completed")}>
-                        <Text style={[styles.tabText, { color: selectedTab === "Completed" ? Colors.primary : Colors.textGray, fontFamily: selectedTab === 'Completed' ? Font["poppins-semiBold"] : Font["poppins-regular"], }]}>Completed</Text>
+                    <TouchableOpacity onPress={() => handleTabPress("My Ticket")}>
+                        <Text style={[styles.tabText, { color: selectedTab === "My Ticket" ? Colors.primary : Colors.textGray, fontFamily: selectedTab === 'My Ticket' ? Font["poppins-semiBold"] : Font["poppins-regular"], }]}>My Ticket</Text>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => handleTabPress("Cancel")}>
                         <Text style={[styles.tabText, { color: selectedTab === "Cancel" ? Colors.primary : Colors.textGray, fontFamily: selectedTab === 'Cancel' ? Font["poppins-semiBold"] : Font["poppins-regular"], }]}>Cancel</Text>
@@ -169,13 +170,18 @@ const TicketScreen: React.FC = () => {
 
             </View>
             <ScrollView>
-                <FlatList
-                    showsVerticalScrollIndicator={false}
-                    data={productsData}
-                    renderItem={renderProductItem}
-                    keyExtractor={(item) => item.id.toString()}
-                    contentContainerStyle={{ paddingVertical: 10 ,paddingHorizontal:15 , marginBottom:100}}
-                />
+                {selectedTab === "Pending" && (
+                    <FlatList
+                        showsVerticalScrollIndicator={false}
+                        data={productsData}
+                        renderItem={renderProductItem}
+                        keyExtractor={(item) => item.id.toString()}
+                        contentContainerStyle={{ paddingVertical: 10, paddingHorizontal: 15, marginBottom: 100 }}
+                    />
+                )}
+                {selectedTab === "My Ticket" && (
+                    <EventTicket></EventTicket>
+                )}
             </ScrollView>
 
         </SafeAreaView >

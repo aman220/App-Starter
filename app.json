@@ -36,6 +36,10 @@
         "projectId": "0c347363-191f-44ce-a2e9-11718852ca60"
       }
     },
-    "owner": "aman856"
+    "owner": "aman856",
+    "plugins": [
+      "expo-asset",
+      "expo-font"
+    ]
   }
 }

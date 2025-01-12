@@ -209,7 +209,7 @@ const AccountScreen: React.FC = () => {
                     }}
                 >
                     <Image
-                        source={{uri:"https://kaspiunique.com/Temp/Splash.png"}}
+                        source={{uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/Splash.png?alt=media&token=ee93a7ec-b9cf-41ec-964d-acf1a5158752"}}
                         style={{
                             width: 30,
                             height: 30,
@@ -222,7 +222,7 @@ const AccountScreen: React.FC = () => {
 
                 <View style={styles.profileContainer}>
                     <Image
-                        source={{uri:"https://kaspiunique.com/Temp/male.png"}}
+                        source={{uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6"}}
                         style={styles.profilePicture}
                     />
                     <View style={styles.infoContainer}>
@@ -296,7 +296,7 @@ const AccountScreen: React.FC = () => {
                 ></View>
 
                 {/* omega verified */}
-                <TouchableOpacity >
+                <TouchableOpacity onPress={()=>{nav.navigate("EventTicket")}}>
                     <View
                         style={{
                             flexDirection: "row",

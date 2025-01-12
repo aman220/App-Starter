@@ -103,7 +103,7 @@ const WelcomeScreen: React.FC = () => {
         <ImageBackground
           style={{ height: height / 2.5, marginTop: 100 }}
           resizeMode="contain"
-          source={{ uri: "https://kaspiunique.com/Temp/Splash.png" }}
+          source={{ uri: "https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/Splash.png?alt=media&token=ee93a7ec-b9cf-41ec-964d-acf1a5158752" }}
         />
         <View style={{ paddingHorizontal: Spacing.padding.base, paddingTop: Spacing.padding.xxl }}>
           <Text style={styles.headerText}>Book Your Ticket</Text>

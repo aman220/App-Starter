@@ -21,6 +21,7 @@ import BottomNav from "../screens/BottamNav/BottamNav";
 import EventDetails from "../screens/ExpandEvent/EventDetails";
 import WelcomeScreen from "../screens/WelcomeScreen";
 import PaymentScreen from "../screens/PaymentScreen";
+import EventTicket from "../screens/Screens/EventTicket";
 
 const theme = {
   ...DefaultTheme,
@@ -62,6 +63,8 @@ function RootNavigator() {
       <Stack.Screen name="ExploreScreen" component={ExploreScreen} />
       <Stack.Screen name="EventDetails" component={EventDetails} />
       <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
+      <Stack.Screen name="EventTicket" component={EventTicket} />
+    
     </Stack.Navigator>
   );
 }

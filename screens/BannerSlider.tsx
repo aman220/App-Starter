@@ -23,9 +23,9 @@ const BannerSlider: React.FC = () => {
   const flatListRef = useRef<FlatList | null>(null);
   
   const images: { index: number; path: { uri: string } }[] = [
-    { index: 0, path: { uri: 'https://kaspiunique.com/Temp/djh.webp' } },
-    { index: 1, path: { uri: 'https://kaspiunique.com/Temp/spandhansds.png' } },
-    { index: 2, path: { uri: 'https://kaspiunique.com/Temp/34grewg.webp' } },
+    { index: 0, path: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/djh.png?alt=media&token=ed9520bb-b06b-4024-93bd-1c8d2fc1ecd0' } },
+    { index: 1, path: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/spandhansds.png?alt=media&token=47f392b2-eea4-480a-9ed5-96d85d359a62' } },
+    { index: 2, path: { uri: 'https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/34grewg.webp?alt=media&token=c9af02b5-e2a8-4d42-9066-88d766a3ae8e' } },
   ];
   
   

@@ -22,6 +22,7 @@ export type RootStackParamList = {
   BottamTab:undefined;
   EventDetails:undefined;
   PaymentScreen :undefined;
+  EventTicket:undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =

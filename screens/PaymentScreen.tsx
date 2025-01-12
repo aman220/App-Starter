@@ -84,7 +84,7 @@ const PaymentScreen: React.FC = () => {
             </View>
             <ScrollView>
                 <View style={{ width: "100%", height: windowHeight * 0.5, padding: 10 }}>
-                    <Image source={{ uri: "https://kaspiunique.com/Temp/QRonline.jpeg" }} style={{ flex: 1, width: null, height: null, resizeMode: 'cover' }} />
+                    <Image source={{ uri: "https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/QRonline.jpeg?alt=media&token=51ebb315-cef1-4b9c-8e4e-8c32512c7211" }} style={{ flex: 1, width: null, height: null, resizeMode: 'cover' }} />
                 </View>
                 <Text style={{ fontFamily: Font["poppins-semiBold"], marginVertical: 10, textAlign: "center" }}>Kindly Scan The Qr Code For Payment</Text>
                 <Text style={{ fontFamily: Font["poppins-semiBold"], textAlign: "center" }}>Dr Himanshu Sharma</Text>

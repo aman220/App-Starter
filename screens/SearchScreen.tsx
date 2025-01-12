@@ -135,7 +135,7 @@ const SearchScreen: React.FC = () => {
                     alignItems: "center"
                   }}
                 >
-                  <MaterialCommunityIcons name="bell" size={25} color={isDarkMode ? "#fff" : Colors.primary} />
+                  <MaterialCommunityIcons name="bell" size={25} color={Colors.primary} />
                 </View>
               </TouchableOpacity>
             </View>
@@ -150,22 +150,22 @@ const SearchScreen: React.FC = () => {
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
-                  backgroundColor: isDarkMode ? Colors.textGray : Colors.light,
+                  backgroundColor: Colors.light,
                   padding: Spacing.padding.base,
                   borderRadius: Spacing.borderRadius.base,
                   width: "80%",
                   height: 50,
                 }}
               >
-                <Ionicons name='search' size={24} color={isDarkMode ? Colors.white : Colors.text} />
+                <Ionicons name='search' size={24} color={Colors.text} />
                 <TextInput
                   style={{
                     fontSize: FontSize.base,
-                    color: isDarkMode ? Colors.white : Colors.text,
+                    color: Colors.text,
                     marginLeft: Spacing.margin.base,
                   }}
                   placeholder='Search Event'
-                  placeholderTextColor={isDarkMode ? Colors.white : Colors.textGray}
+                  placeholderTextColor={Colors.text}
                 />
               </View>
               <TouchableOpacity

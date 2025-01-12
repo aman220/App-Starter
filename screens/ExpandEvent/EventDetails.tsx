@@ -189,11 +189,11 @@ const EventDetails: React.FC = () => {
     const AvatarGroup = () => {
         //set views data
         const avatars = [
-            { uri: "https://kaspiunique.com/Temp/male.png" },
-            { uri: "https://kaspiunique.com/Temp/female.png" },
-            { uri: "https://kaspiunique.com/Temp/male.png" },
-            { uri: "https://kaspiunique.com/Temp/female.png" },
-        ];
+            {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6"},
+            {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/female.png?alt=media&token=a48a4f73-05fe-4a78-b619-756b57ea06e6"},
+            {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6"},
+            {uri:"https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/female.png?alt=media&token=a48a4f73-05fe-4a78-b619-756b57ea06e6"},
+          ];
 
         return (
             <View style={styles.avatarGroup}>
@@ -224,7 +224,7 @@ const EventDetails: React.FC = () => {
                         <Ionicons name="close" size={24} color={Colors.white} />
                     </TouchableOpacity>
                     <Video
-                        source={{ uri: "https://kaspiunique.com/Temp/WhatsApp Video 2024-03-14 at 23.06.11_3c6bdfb6.mp4" }} // Replace with your video URL
+                        source={{ uri: "https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/WhatsApp%20Video%202024-03-14%20at%2023.06.11_3c6bdfb6.mp4?alt=media&token=cd96ac28-ba22-49be-afbd-144c0bdac229" }} // Replace with your video URL
                         rate={1.0}
                         volume={1.0}
                         isMuted={false}
@@ -254,7 +254,7 @@ const EventDetails: React.FC = () => {
                     </View>
                     <View style={styles.imageContainer}>
                         <Image
-                            source={{ uri: "https://kaspiunique.com/Temp/djh.webp" }} // Replace with your image path
+                            source={{ uri: "https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/djh.png?alt=media&token=ed9520bb-b06b-4024-93bd-1c8d2fc1ecd0" }} // Replace with your image path
                             style={styles.image}
                         />
                     </View>
@@ -298,7 +298,7 @@ const EventDetails: React.FC = () => {
                             <Text style={{ fontFamily: Font["poppins-semiBold"] }}>Organizer</Text>
                             <View style={{ display: "flex", flexDirection: "row", alignItems: "center", marginTop: 10 }}>
                                 <View>
-                                    <Image source={{ uri: "https://kaspiunique.com/Temp/male.png" }} width={60} height={60} />
+                                    <Image source={{ uri: "https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6" }} width={60} height={60} />
                                 </View>
                                 <View style={{ marginHorizontal: 10 }}>
                                     <Text style={{ fontFamily: Font["poppins-semiBold"] }}>Student Affair Council</Text>
@@ -346,7 +346,7 @@ const EventDetails: React.FC = () => {
                             <View style={{ display: "flex", flexDirection: "row", alignItems: "center", marginTop: 30, width: "100%" }}>
                                 <View style={{ flexDirection: "row", flex: 1, alignItems: "center" }}>
                                     <View>
-                                        <Image source={{ uri: "https://kaspiunique.com/Temp/male.png" }} style={{ width: 60, height: 60 }} />
+                                        <Image source={{ uri: "https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6" }} style={{ width: 60, height: 60 }} />
                                     </View>
                                     <View style={{ marginHorizontal: 10 }}>
                                         <Text style={{ fontFamily: Font["poppins-semiBold"] }}>Aman raj Singh</Text>
@@ -372,7 +372,7 @@ const EventDetails: React.FC = () => {
                                         <Text style={{ fontFamily: Font["poppins-regular"], color: Colors.textGray, textAlign: "right" }}>Technical Head</Text>
                                     </View>
                                     <View style={{ marginLeft: 10 }}>
-                                        <Image source={{ uri: "https://kaspiunique.com/Temp/male.png" }} style={{ width: 60, height: 60 }} />
+                                        <Image source={{ uri: "https://firebasestorage.googleapis.com/v0/b/collab-o-452a2.appspot.com/o/male.png?alt=media&token=56fa9c9b-20a7-4772-a474-3655b7c2b2c6" }} style={{ width: 60, height: 60 }} />
                                     </View>
                                 </View>
                             </View>
